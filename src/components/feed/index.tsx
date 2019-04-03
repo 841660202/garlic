@@ -23,7 +23,7 @@ export default class Feed extends Component {
           </View>
         </View>
         <View className='feed-content'>
-          <View className='question' onClick={this.navigateTo.bind(this,'/pages/home/index')}>
+          <View className='question' onClick={this.navigateTo.bind(this,'/pages/detail/index')}>
             <View className='question-link'>
               <Text>{this.props.question}</Text>
             </View>

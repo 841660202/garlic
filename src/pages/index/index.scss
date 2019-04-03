@@ -45,3 +45,16 @@
   color: #8CCEFD;
   line-height: 20px;
 }
+.swiperItem-wrap {
+  position: relative;
+  overflow: hidden;
+  .swiperItem-des{
+    position:absolute;
+    left:0;
+    top: 240px;
+    background-color: rgba(0, 0, 0, 0.48);
+    width:100%;
+    height:60px;
+    color: #fff;
+  }
+}

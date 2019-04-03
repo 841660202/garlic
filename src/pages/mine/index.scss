@@ -1,35 +1,83 @@
-.user {
-  width: 725px;
-  background: #ffffff;
-  padding: 30px 25px 30px 0;
-  margin: 15rpx 0 0 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #dcdcdc;
-  box-shadow: 0 2px 5px #eeeeee;
-
-  .userinfo-avatar{
-    flex: 1;
-    display: inline-block;
-    width: 100px!important;
-    height: 100px!important;
-    border-radius: 80px;
+.head-wrap{
+  position: relative;
+  height: 500px;
+  .head-bg{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
   }
-  .user-info{
-    flex: 5;
-    text-align: left;
+  .user {
+    width: 725px;
+    //background: #ffffff;
+    padding: 30px 25px 30px 0;
+    margin: 15rpx 0 0 0;
+    border-top: 1px solid #eee;
+    //border-bottom: 1px solid #dcdcdc;
+    //box-shadow: 0 2px 5px #eeeeee;
+    .userinfo-avatar{
+      flex: 1;
+      display: inline-block;
+      width: 100px!important;
+      height: 100px!important;
+      border-radius: 80px;
+    }
+    .user-info{
+      flex: 5;
+      text-align: left;
 
-    text,div,span{
-      display: block;
+      text,div,span{
+        display: block;
+      }
+      .userinfo-nickname{
+        padding: 8px 0 10px 0;
+        font-size: 30px;
+        color: #818A8F;
+      }
+      .edit{
+        font-size: 30px;
+        color: #bababa;
+        line-height: 34px;
+      }
     }
-    .userinfo-nickname{
-      padding: 8px 0 10px 0;
+    .user-money{
       font-size: 30px;
-      color: #818A8F;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .brokerage{
+        color: #fda100;
+      }
     }
-    .edit{
-      font-size: 30px;
-      color: #bababa;
-      line-height: 34px;
+  }
+}
+// center
+.center-wrap{
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 254, 255, 0.52);
+  height: 180px;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 20px;
+  text-align: center;
+  .center-item{
+    height: 100px;
+    width: 100px;
+    .c-i-img{
+      height: 70px;
+      width: 70px;
+    }
+    .c-i-text{
+      font-size: 34px;
+      color: #6d6d6d;
+      line-height: 60px;
+      padding: 30px 0;
     }
   }
 }

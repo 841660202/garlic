@@ -10,7 +10,7 @@ import img5 from '../../asset/images/icon1.jpeg'
 
 export default class Question extends Component {
   config = {
-    navigationBarTitleText: '首页资讯'
+    navigationBarTitleText: '发现'
   }
   constructor() {
     super(...arguments)

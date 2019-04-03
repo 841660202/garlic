@@ -1,5 +1,5 @@
-import Taro, { Component } from '@tarojs/taro'
-import { Provider } from '@tarojs/mobx'
+import Taro, {Component} from '@tarojs/taro'
+import {Provider} from '@tarojs/mobx'
 import Index from './pages/index'
 
 import counterStore from './store/counter'
@@ -19,11 +19,11 @@ const store = {
 class App extends Component {
   config = {
     pages: [
+      'pages/auth/index',
       'pages/index/index',
       'pages/detail/index',
       'pages/home/index',
       'pages/mine/index',
-      'pages/auth/index',
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -41,12 +41,24 @@ class App extends Component {
         text: "首页",
         iconPath: "./asset/images/index.png",
         selectedIconPath: "./asset/images/index_focus.png"
-      },{
+      }, {
         pagePath: "pages/home/index",
-        text: "发现",
+        text: "蒜价",
         iconPath: "./asset/images/discovery.png",
         selectedIconPath: "./asset/images/discovery_focus.png"
       },
+        {
+          pagePath: "pages/home/index",
+          text: "科普",
+          iconPath: "./asset/images/discovery.png",
+          selectedIconPath: "./asset/images/discovery_focus.png"
+        },
+        {
+          pagePath: "pages/home/index",
+          text: "农/商",
+          iconPath: "./asset/images/discovery.png",
+          selectedIconPath: "./asset/images/discovery_focus.png"
+        },
         {
           pagePath: "pages/mine/index",
           text: "我的",
@@ -56,17 +68,21 @@ class App extends Component {
     }
   }
 
-  componentDidMount () {}
+  componentDidMount() {
+  }
 
-  componentDidShow () {}
+  componentDidShow() {
+  }
 
-  componentDidHide () {}
+  componentDidHide() {
+  }
 
-  componentDidCatchError () {}
+  componentDidCatchError() {
+  }
 
   // 在 App 类中的 render() 函数没有实际作用
   // 请勿修改此函数
-  render () {
+  render() {
     return (
       <Provider store={store}>
         <Index />

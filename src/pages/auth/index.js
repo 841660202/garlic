@@ -1,9 +1,10 @@
-import { ComponentType } from 'react'
-import Taro, { Component } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
-import { observer, inject } from '@tarojs/mobx'
+import Taro, {Component} from '@tarojs/taro'
+import {View, Button} from '@tarojs/components'
+import '@tarojs/async-await'
+import {observer, inject} from '@tarojs/mobx'
 
 import './index.scss'
+import {login} from "../../service/api";
 
 @inject('counterStore')
 @observer
@@ -20,39 +21,54 @@ class Index extends Component {
     navigationBarTitleText: '授权登陆'
   }
 
-  componentWillMount () { }
+  componentWillMount() {
+  }
 
-  componentWillReact () {
+  componentWillReact() {
     console.log('componentWillReact')
   }
 
-  componentDidMount () { }
+  componentDidMount() {
+  }
 
-  componentWillUnmount () { }
+  componentWillUnmount() {
+  }
 
-  componentDidShow () { }
+  componentDidShow() {
+  }
 
-  componentDidHide () { }
+  componentDidHide() {
+  }
+
   onLoginByWeapp = (e) => {
+    console.log(e)
     e.stopPropagation();
     Taro.login({
-      success: function(res) {
-        console.log(res);
+      success: async (res) => {
         if (res.code) {
+          console.log(res.code)
           //用户登录凭证（有效期五分钟）。开发者需要在开发者服务器后台调用 api，使用 code 换取 openid 和 session_key 等信息
+          // login({code: res.code}).then(result => {
+          //   console.log(result)
+          // })
+          const result = await login({code: res.code})
+          console.log(result)
         } else {
           console.log("登录失败！" + res.errMsg);
         }
       }
     });
   };
-  render () {
+
+  render() {
     return (
       <View className='index'>
-       <Text>login</Text>
+        <Button className='btn' openType='getUserInfo' onGetUserInfo={this.onLoginByWeapp} type='primary'>
+          开启缘分
+        </Button>
       </View>
     )
   }
 }
 
-export default Index  as ComponentType
+export default Index

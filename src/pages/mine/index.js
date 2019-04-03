@@ -9,6 +9,7 @@ import recentPng from '../../asset/images/recent.png'
 import bookPng from '../../asset/images/book.png'
 import livePng from '../../asset/images/live.png'
 import zhiPng from '../../asset/images/zhi.png'
+import bgp from '../../asset/images/bgp.png'
 
 export default class More extends Component {
   config = {
@@ -17,54 +18,47 @@ export default class More extends Component {
   render () {
     return (
       <View className='more'>
-        <View className='user flex-wrp'>
-          <View className='avatar flex-item'>
-            <Image className='userinfo-avatar' src='https://image.ibb.co/nKV5Cy/default_avatar.jpg' />
+        <View className='head-wrap'>
+          <Image className='head-bg' src={bgp} />
+          <View className='user flex-wrp'>
+            <View className='avatar flex-item'>
+              <Image className='userinfo-avatar' src='https://image.ibb.co/nKV5Cy/default_avatar.jpg' />
+            </View>
+            <View className='user-info flex-item'>
+              <Text className='userinfo-nickname'>蒜头</Text>
+              <Text className='edit'>勋章</Text>
+            </View>
+            <View className='user-money'>
+              <Text className='brokerage'>佣金</Text>
+            </View>
           </View>
-          <View className='user-info flex-item'>
-            <Text className='userinfo-nickname'>阿集</Text>
-            <Text className='edit'>查看或编辑个人主页</Text>
+          {/*center*/}
+          <View className='center-wrap'>
+            <View className='center-item'>
+              <Image class='c-i-img' src={`${eyePng}`} />
+              <Text className='c-i-text'>关注</Text>
+            </View>
+            <View className='center-item'>
+              <Image class='c-i-img' src={`${eyePng}`} />
+              <Text className='c-i-text'>收藏</Text>
+            </View>
+            <View className='center-item'>
+              <Image class='c-i-img' src={`${eyePng}`} />
+              <Text className='c-i-text'>浏览</Text>
+            </View>
+            <View className='center-item'>
+              <Image class='c-i-img' src={`${eyePng}`} />
+              <Text className='c-i-text'>记账</Text>
+            </View>
           </View>
         </View>
         <View className='my'>
           <View className='my-item flex-wrp'>
             <View className='myitem-icon flex-item' >
-              <Image class='myitem-img' src={`${eyePng}`} />
-            </View>
-            <View className='myitem-name flex-item'>
-              <Text>我的关注</Text>
-            </View>
-          </View>
-          <View className='my-item flex-wrp'>
-            <View className='myitem-icon flex-item' >
-              <Image class='myitem-img' src={starPng} />
-            </View>
-            <View className='myitem-name flex-item'>
-              <Text>我的收藏</Text>
-            </View>
-          </View>
-          <View className='my-item flex-wrp'>
-            <View className='myitem-icon flex-item' >
-              <Image class='myitem-img' src={draftPng} />
-            </View>
-            <View className='myitem-name flex-item'>
-              <Text>我的草稿</Text>
-            </View>
-          </View>
-          <View className='my-item flex-wrp'>
-            <View className='myitem-icon flex-item' >
-              <Image class='myitem-img' src={recentPng} />
-            </View>
-            <View className='myitem-name flex-item'>
-              <Text>最近浏览</Text>
-            </View>
-          </View>
-          <View className='my-item flex-wrp'>
-            <View className='myitem-icon flex-item' >
               <Image class='myitem-img' src={bookPng} />
             </View>
             <View className='myitem-name flex-item'>
-              <Text>我的书架</Text>
+              <Text>我的浏览</Text>
             </View>
           </View>
           <View className='my-item flex-wrp'>
@@ -72,7 +66,7 @@ export default class More extends Component {
               <Image class='myitem-img' src={livePng} />
             </View>
             <View className='myitem-name flex-item'>
-              <Text>我的 Live</Text>
+              <Text>我的发布</Text>
             </View>
           </View>
           <View className='my-item flex-wrp'>
@@ -80,7 +74,15 @@ export default class More extends Component {
               <Image class='myitem-img' src={zhiPng} />
             </View>
             <View className='myitem-name flex-item'>
-              <Text>我的值乎</Text>
+              <Text>我的草稿</Text>
+            </View>
+          </View>
+          <View className='my-item flex-wrp'>
+            <View className='myitem-icon flex-item' >
+              <Image class='myitem-img' src={zhiPng} />
+            </View>
+            <View className='myitem-name flex-item'>
+              <Text>设置</Text>
             </View>
           </View>
         </View>
