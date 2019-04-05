@@ -1,14 +1,15 @@
 import Taro, {Component} from '@tarojs/taro'
-import {View, Button} from '@tarojs/components'
+import {View, Button, Image} from '@tarojs/components'
 import '@tarojs/async-await'
+import { AtCurtain, AtToast, AtMessage } from "taro-ui"
 import {observer, inject} from '@tarojs/mobx'
-
+import six from '../../asset/images/six.jpg'
 import './index.scss'
 import {login} from "../../service/api";
 
 @inject('counterStore')
 @observer
-class Index extends Component {
+class Auth extends Component {
 
   /**
    * 指定config的类型声明为: Taro.Config
@@ -20,7 +21,12 @@ class Index extends Component {
   config = {
     navigationBarTitleText: '授权登陆'
   }
-
+  constructor () {
+    super(...arguments)
+    this.state = {
+      isOpened: true,
+    }
+  }
   componentWillMount() {
   }
 
@@ -39,7 +45,12 @@ class Index extends Component {
 
   componentDidHide() {
   }
-
+  onClose () {
+    Taro.atMessage({
+      'message': '授权后您将查看更多信息',
+      'type': 'warning',
+    })
+  }
   onLoginByWeapp = (e) => {
     console.log(e)
     e.stopPropagation();
@@ -53,6 +64,11 @@ class Index extends Component {
           // })
           const result = await login({code: res.code})
           console.log(result)
+          if(result.data){
+            this.setState({
+              isOpened: false
+            })
+          }
         } else {
           console.log("登录失败！" + res.errMsg);
         }
@@ -62,13 +78,33 @@ class Index extends Component {
 
   render() {
     return (
-      <View className='index'>
-        <Button className='btn' openType='getUserInfo' onGetUserInfo={this.onLoginByWeapp} type='primary'>
-          开启缘分
-        </Button>
-      </View>
+       <View className='login-wrap'>
+         <View className='login-bg' />
+         <AtMessage />
+         <AtCurtain
+           closeBtnPosition='top-right'
+           isOpened={this.state.isOpened}
+           onClose={this.onClose.bind(this)}
+         >
+           <Button
+             className='login-btn'
+             openType='getUserInfo'
+             onGetUserInfo={this.onLoginByWeapp}
+             type='primary'
+             plain
+             size='mini'
+           >
+             授权登陆
+           </Button>
+           <Image
+             style='width:100%;height:150px'
+             src={six}
+           />
+         </AtCurtain>
+         <AtToast isOpened text='这个不是很好哦'></AtToast>
+       </View>
     )
   }
 }
 
-export default Index
+export default Auth

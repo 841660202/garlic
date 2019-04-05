@@ -7,10 +7,11 @@ import img2 from '../../asset/images/comment2.png'
 import img3 from '../../asset/images/invite.png'
 import img4 from '../../asset/images/write.png'
 import img5 from '../../asset/images/icon1.jpeg'
+import MoveChart from "../../components/MoveChart";
 
 export default class Question extends Component {
   config = {
-    navigationBarTitleText: '科普'
+    navigationBarTitleText: '蒜价'
   }
 
   constructor() {
@@ -20,52 +21,25 @@ export default class Question extends Component {
   navigateTo(url) {
     Taro.navigateTo({url: url})
   }
+  componentDidMount() {
+    const chartData = {
+      dimensions: {
+        data: ['4/1', '4/2', '4/3', '4/4', '4/5', '4/6', '4/7','4/8', '4/9', '4/10', '4/11', '4/12', '4/13', '4/14', '4/15', '4/16', '4/17','4/18', '4/19', '4/20',]
+      },
+      measures: [{
+        data: [10, 52, 200, 334, 390, 330, 220, 334, 390, 330, 220, 10, 52, 200, 220, 334, 390, 330, 220, 52,  ]
+      }]
+    }
+    this.moveChart.refresh(chartData);
+  }
+  refMoveChart = (node) => this.moveChart = node
 
   render() {
     return (
       <View>
-        {/*<View className='question-wrp'>*/}
-        {/*<View className='question-item'>*/}
-        {/*<View className='que-tag'>*/}
-        {/*<Text className='tag'>阅读</Text>*/}
-        {/*<Text className='tag'>电子书</Text>*/}
-        {/*<Text className='tag'>Kindle</Text>*/}
-        {/*<Text className='tag'>书籍</Text>*/}
-        {/*<Text className='tag'>文学</Text>*/}
-        {/*</View>*/}
-        {/*<View className='que-title'>*/}
-        {/*选择 Kindle 而不是纸质书的原因是什么？*/}
-        {/*</View>*/}
-        {/*<View className='que-content'>*/}
-        {/*WEB前端*不靠谱天气预报员*想做代码小仙女*/}
-        {/*</View>*/}
-        {/*<View className='que-follow'>*/}
-        {/*<View className='left'>*/}
-        {/*<View className='watch'>*/}
-        {/*<Image src={img1}></Image>*/}
-        {/*<Text>3316</Text>*/}
-        {/*</View>*/}
-        {/*<View className='comment'>*/}
-        {/*<Image src={img2}></Image>*/}
-        {/*<Text>27</Text>*/}
-        {/*</View>*/}
-        {/*</View>*/}
-        {/*<View className='right'>*/}
-        {/*关注*/}
-        {/*</View>*/}
-        {/*</View>*/}
-        {/*</View>*/}
-        {/*<View className='que-operate flex-wrp'>*/}
-        {/*<View className='invite flex-item'>*/}
-        {/*<Image src={img3}></Image>*/}
-        {/*<Text>邀请回答</Text>*/}
-        {/*</View>*/}
-        {/*<View className='write flex-item'>*/}
-        {/*<Image src={img4}></Image>*/}
-        {/*<Text>写回答</Text>*/}
-        {/*</View>*/}
-        {/*</View>*/}
-        {/*</View>*/}
+        <View className='move-chart'>
+          <MoveChart ref={this.refMoveChart} />
+        </View>
         <View className='answer-feed'>
           <View className='feed-item'>
             <View className='feed-source'>
@@ -182,11 +156,14 @@ export default class Question extends Component {
               <View className='answer-body'>
                 <View onClick={this.navigateTo.bind(this, '/pages/detail/index')}>
                   <Text className='answer-txt'>
-                    蒜含有大蒜素。《本草纲目》记载蒜可治疗便毒诸疮、产肠脱下、小儿惊风。现代医学认为大蒜能提高免疫力，提高人体淋巴T细胞、巨噬细胞等免疫系统转化能力。将新鲜的大蒜切片或捣碎后生吃有助于心脏健康[4]。医学上被用来驱除肠内的寄生虫。 可解除体内毒素和利用加强免疫系统来保护对抗感染，可降低血压，有助于血糖含量的稳定。对于治疗动脉硬化症、关节炎、气喘、癌症、血液循环问题、感冒、流行性感冒、消化问题、心脏问题、失眠症、肝脏疾病、静脉窦炎、溃疡和酵母菌感染都有益。靠抑制幽门杆菌的生长来预防胃溃疡，对于各种疾病或感染都有效。
+                    蒜含有大蒜素。《本草纲目》记载蒜可治疗便毒诸疮、产肠脱下、小儿惊风。现代医学认为大蒜能提高免疫力，提高人体淋巴T细胞、巨噬细胞等免疫系统转化能力。将新鲜的大蒜切片或捣碎后生吃有助于心脏健康[4]。医学上被用来驱除肠内的寄生虫。
+                    可解除体内毒素和利用加强免疫系统来保护对抗感染，可降低血压，有助于血糖含量的稳定。对于治疗动脉硬化症、关节炎、气喘、癌症、血液循环问题、感冒、流行性感冒、消化问题、心脏问题、失眠症、肝脏疾病、静脉窦炎、溃疡和酵母菌感染都有益。靠抑制幽门杆菌的生长来预防胃溃疡，对于各种疾病或感染都有效。
 
-                    锺景光(中国医药大学 生技制药暨食品科学院 院长)指出，大蒜中的有机硫化合物能有效抑制大肠癌细胞，而他们的研究完整厘清大蒜中抗癌成分对癌细胞的影响过程，得知抗癌成分如何让癌细胞周期停滞，直到死亡的过程，提供大肠癌药物研发的参考依据[5]。
+                    锺景光(中国医药大学 生技制药暨食品科学院
+                    院长)指出，大蒜中的有机硫化合物能有效抑制大肠癌细胞，而他们的研究完整厘清大蒜中抗癌成分对癌细胞的影响过程，得知抗癌成分如何让癌细胞周期停滞，直到死亡的过程，提供大肠癌药物研发的参考依据[5]。
 
-                    一般的大白蒜在60℃左右高湿条件下加热一个月以上，会成为黑蒜（日语：黒にんにく）[6]。另一个配合电饭煲的快捷制黑蒜的方法：将大白蒜连皮 (用布抹干净)放入电饭煲里，设定“保温”状态12天，取出并风干5天即可食用。[7]
+                    一般的大白蒜在60℃左右高湿条件下加热一个月以上，会成为黑蒜（日语：黒にんにく）[6]。另一个配合电饭煲的快捷制黑蒜的方法：将大白蒜连皮
+                    (用布抹干净)放入电饭煲里，设定“保温”状态12天，取出并风干5天即可食用。[7]
 
                     黑大蒜在经过长时间的发酵熟成后，大蒜中所含的蛋白质被分解成氨基酸，碳水化合物被分解成单糖，原本容易造成打嗝、异味的蒜素成分在发酵过程中，也转化成没有刺鼻异味的含硫化物，口感变得更好、更易入口。[8]
 

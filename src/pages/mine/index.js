@@ -9,11 +9,14 @@ import recentPng from '../../asset/images/recent.png'
 import bookPng from '../../asset/images/book.png'
 import livePng from '../../asset/images/live.png'
 import zhiPng from '../../asset/images/zhi.png'
-import bgp from '../../asset/images/bgp.png'
+import bgp from '../../asset/images/six.jpg'
 
 export default class More extends Component {
   config = {
     navigationBarTitleText: '我的'
+  }
+  navigateTo(url) {
+    Taro.navigateTo({url: url})
   }
   render () {
     return (
@@ -36,19 +39,19 @@ export default class More extends Component {
           <View className='center-wrap'>
             <View className='center-item'>
               <Image class='c-i-img' src={`${eyePng}`} />
-              <Text className='c-i-text'>关注</Text>
+              <View className='c-i-text'><Text>关注</Text></View>
             </View>
             <View className='center-item'>
               <Image class='c-i-img' src={`${eyePng}`} />
-              <Text className='c-i-text'>收藏</Text>
+              <View className='c-i-text'><Text>收藏</Text></View>
             </View>
             <View className='center-item'>
               <Image class='c-i-img' src={`${eyePng}`} />
-              <Text className='c-i-text'>浏览</Text>
+              <View className='c-i-text'><Text>浏览</Text></View>
             </View>
             <View className='center-item'>
               <Image class='c-i-img' src={`${eyePng}`} />
-              <Text className='c-i-text'>记账</Text>
+              <View className='c-i-text'><Text>记账</Text></View>
             </View>
           </View>
         </View>
@@ -61,7 +64,7 @@ export default class More extends Component {
               <Text>我的浏览</Text>
             </View>
           </View>
-          <View className='my-item flex-wrp'>
+          <View className='my-item flex-wrp' onClick={this.navigateTo.bind(this, '/pages/publish/index')}>
             <View className='myitem-icon flex-item' >
               <Image class='myitem-img' src={livePng} />
             </View>

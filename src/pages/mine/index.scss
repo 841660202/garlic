@@ -1,6 +1,6 @@
 .head-wrap{
   position: relative;
-  height: 500px;
+  height: 360px;
   .head-bg{
     position: absolute;
     width: 100%;
@@ -12,7 +12,6 @@
   }
   .user {
     width: 725px;
-    //background: #ffffff;
     padding: 30px 25px 30px 0;
     margin: 15rpx 0 0 0;
     border-top: 1px solid #eee;
@@ -56,28 +55,31 @@
 }
 // center
 .center-wrap{
-  margin-top: 80px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: rgba(255, 254, 255, 0.52);
-  height: 180px;
+  background: rgba(100, 100, 100, 0.5);
+  height: 120px;
   width: 90%;
   margin-left: 5%;
   border-radius: 20px;
+  border: 4px dashed #fff;
   text-align: center;
   .center-item{
-    height: 100px;
     width: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     .c-i-img{
-      height: 70px;
-      width: 70px;
+      height: 60px;
+      width: 60px;
     }
     .c-i-text{
-      font-size: 34px;
-      color: #6d6d6d;
-      line-height: 60px;
-      padding: 30px 0;
+      font-size: 26px;
+      color: #fff;
+      line-height: 30px;
+      padding: 4px 6px;
     }
   }
 }

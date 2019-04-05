@@ -24,6 +24,9 @@ class App extends Component {
       'pages/detail/index',
       'pages/home/index',
       'pages/mine/index',
+      'pages/price/index',
+      'pages/farmers-traders/index',
+      'pages/publish/index',
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -42,7 +45,7 @@ class App extends Component {
         iconPath: "./asset/images/index.png",
         selectedIconPath: "./asset/images/index_focus.png"
       }, {
-        pagePath: "pages/home/index",
+        pagePath: "pages/price/index",
         text: "蒜价",
         iconPath: "./asset/images/discovery.png",
         selectedIconPath: "./asset/images/discovery_focus.png"
@@ -54,7 +57,7 @@ class App extends Component {
           selectedIconPath: "./asset/images/discovery_focus.png"
         },
         {
-          pagePath: "pages/home/index",
+          pagePath: 'pages/farmers-traders/index',
           text: "农/商",
           iconPath: "./asset/images/discovery.png",
           selectedIconPath: "./asset/images/discovery_focus.png"
