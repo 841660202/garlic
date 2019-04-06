@@ -3,7 +3,12 @@ import * as echarts from "./ec-canvas/echarts";
 
 function setChartData(chart, data) {
   let option = {
-    tooltip: {},
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        type: 'cross'
+      }
+    },
     color: ['#2adb09'],
     title: {
       subtext: '最近20天蒜价',
@@ -18,7 +23,14 @@ function setChartData(chart, data) {
         axisTick: {
           alignWithLabel: true
         },
-        name: '日'
+        name: '日',
+        axisPointer: {
+          label: {
+            formatter: function (params) {
+              return params.value+' 日';
+            }
+          }
+        },
       }
     ],
     dataZoom: [
@@ -38,7 +50,10 @@ function setChartData(chart, data) {
     yAxis: [
       {
         type: 'value',
-        name: '价格/元'
+        name: '价格/元',
+        splitLine: {
+          show: false
+        },
       }
     ],
     series: []
