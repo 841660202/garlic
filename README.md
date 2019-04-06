@@ -41,8 +41,8 @@ $ npx taro build --type weapp
 ## 截图
 
 <div style='display: flex;flex-direction: row;flex-wrap: wrap'>
-<img src="https://github.com/841660202/garlic/blob/master/src/asset/readme/home.png?raw=true" width="200" align=center />
-<img src="https://github.com/841660202/garlic/blob/master/src/asset/readme/price.png?raw=true" width="200" align=center />
-<img src="https://github.com/841660202/garlic/blob/master/src/asset/readme/increase-production.png?raw=true" width="200" align=center />
-<img src="https://github.com/841660202/garlic/blob/master/src/asset/readme/mine.png?raw=true" width="200" align=center />
+<img src="https://github.com/841660202/garlic/blob/master/src/asset/readme/home.png?raw=true" width="200" align=center style='margin:6px'/>
+<img src="https://github.com/841660202/garlic/blob/master/src/asset/readme/price.png?raw=true" width="200" align=center  style='margin:6px'/>
+<img src="https://github.com/841660202/garlic/blob/master/src/asset/readme/increase-production.png?raw=true" width="200" align=center  style='margin:6px' />
+<img src="https://github.com/841660202/garlic/blob/master/src/asset/readme/mine.png?raw=true" width="200" align=center  style='margin:6px' />
 </div>
