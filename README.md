@@ -40,4 +40,7 @@ $ npx taro build --type weapp
 
 ## 截图
 
+<img src="https://github.com/841660202/garlic/blob/master/src/asset/readme/home.png?raw=true" width="200" align=center />
+<img src="https://github.com/841660202/garlic/blob/master/src/asset/readme/price.png?raw=true" width="200" align=center />
+<img src="https://github.com/841660202/garlic/blob/master/src/asset/readme/increase-production.png?raw=true" width="200" align=center />
 <img src="https://github.com/841660202/garlic/blob/master/src/asset/readme/mine.png?raw=true" width="200" align=center />
