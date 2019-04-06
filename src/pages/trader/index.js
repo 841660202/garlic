@@ -4,6 +4,7 @@ import {Map, View, Text, Image} from '@tarojs/components'
 import location from '../../asset/images/center-location.png'
 import self_location from '../../asset/images/self-location.png'
 import logo from '../../asset/images/book.png'
+import './index.scss'
 
 export default class TraderMap extends Component {
   config = {

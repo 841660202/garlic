@@ -2,14 +2,6 @@ import Taro, { Component } from '@tarojs/taro'
 import { View, Text,Image} from '@tarojs/components'
 import { AtIcon } from 'taro-ui'
 import './index.scss'
-
-import eyePng from '../../asset/images/eye.png'
-import starPng from '../../asset/images/star.png'
-import draftPng from '../../asset/images/draft.png'
-import recentPng from '../../asset/images/recent.png'
-import bookPng from '../../asset/images/book.png'
-import livePng from '../../asset/images/live.png'
-import zhiPng from '../../asset/images/zhi.png'
 import bgp from '../../asset/images/six.jpg'
 
 export default class More extends Component {

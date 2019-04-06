@@ -6,7 +6,6 @@ import './index.scss'
 import img2 from '../../asset/images/good-bad.png'
 import img3 from '../../asset/images/flag.png'
 import img4 from '../../asset/images/heart2.png'
-import img5 from '../../asset/images/star2.png'
 import img6 from '../../asset/images/comment.png'
 import img7 from '../../asset/images/icon1.jpeg'
 
@@ -65,10 +64,10 @@ export default class Home extends Component {
                 <Image src={img4}></Image>
                 <Text>感谢</Text>
               </View>
-              <View className='operation-btn flex-item'>
-                <Image src={img5}></Image>
-                <Text>收藏</Text>
-              </View>
+              {/*<View className='operation-btn flex-item'>*/}
+                {/*<Image src={img5}></Image>*/}
+                {/*<Text>收藏</Text>*/}
+              {/*</View>*/}
               <View className='operation-btn flex-item'>
                 <Image src={img6}></Image>
                 <Text>302</Text>

@@ -1,10 +1,8 @@
 import Taro, {Component} from '@tarojs/taro'
-import {View, ScrollView, Text, Input, Image, Swiper, SwiperItem} from '@tarojs/components'
-import {AtGrid, AtIcon} from "taro-ui"
+import {View, ScrollView, Text, Image, Swiper, SwiperItem} from '@tarojs/components'
+import {AtGrid,} from "taro-ui"
 import './index.scss'
 import Feed from '../../components/feed/index'
-import searchPng from '../../asset/images/search.png'
-import lightingPng from '../../asset/images/lighting.png'
 
 export default class Index extends Component {
   config = {
@@ -109,7 +107,7 @@ export default class Index extends Component {
             swipers.map(item => (
               <SwiperItem key={item.url}>
                 <View className='swiperItem-wrap'>
-                  <Image src={item.url} mode='aspectFill' style={{width: '100%', height: 150}}/>
+                  <Image src={item.url} mode='aspectFill' style={{width: '100%', height: 150}} />
                   <Text className='swiperItem-des'>{item.des}</Text>
                 </View>
               </SwiperItem>
@@ -123,7 +121,7 @@ export default class Index extends Component {
                 prefixClass: 'iconfont',
                 size: 28,
                 color: '#00E676',
-                value: 'qingsuan'
+                value: 'suanmiao'
               },
               value: '蒜苗'
             },
@@ -221,14 +219,14 @@ export default class Index extends Component {
         {/*</View>*/}
         {/*</View>*/}
         <ScrollView className='container'
-                    scrollY
-                    scrollWithAnimation
-                    scrollTop='0'
-                    lowerThreshold='10'
-                    upperThreshold='10'
-                    style='height:300px'
-                    onScrollToUpper={this.updateList}
-                    onScrollToLower={this.appendNextPageList}
+          scrollY
+          scrollWithAnimation
+          scrollTop='0'
+          lowerThreshold='10'
+          upperThreshold='10'
+          style='height:300px'
+          onScrollToUpper={this.updateList}
+          onScrollToLower={this.appendNextPageList}
         >
           {
             this.state.loading
