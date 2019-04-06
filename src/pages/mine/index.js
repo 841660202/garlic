@@ -1,5 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text,Image} from '@tarojs/components'
+import { AtIcon } from 'taro-ui'
 import './index.scss'
 
 import eyePng from '../../asset/images/eye.png'
@@ -38,19 +39,20 @@ export default class More extends Component {
           {/*center*/}
           <View className='center-wrap'>
             <View className='center-item'>
-              <Image class='c-i-img' src={`${eyePng}`} />
+              <AtIcon className='c-i-img' prefixClass='iconfont' value='follow' size='27' color='#E91E63'></AtIcon>
+              {/*<Image class='c-i-img' src={`${eyePng}`} />*/}
               <View className='c-i-text'><Text>关注</Text></View>
             </View>
             <View className='center-item'>
-              <Image class='c-i-img' src={`${eyePng}`} />
+              <AtIcon className='c-i-img' prefixClass='iconfont' value='collection' size='27' color='#FF5722'></AtIcon>
               <View className='c-i-text'><Text>收藏</Text></View>
             </View>
             <View className='center-item'>
-              <Image class='c-i-img' src={`${eyePng}`} />
+              <AtIcon className='c-i-img' prefixClass='iconfont' value='follow' size='27' color='#00E676'></AtIcon>
               <View className='c-i-text'><Text>浏览</Text></View>
             </View>
             <View className='center-item'>
-              <Image class='c-i-img' src={`${eyePng}`} />
+              <AtIcon className='c-i-img' prefixClass='iconfont' value='bill' size='27' color='#F00'></AtIcon>
               <View className='c-i-text'><Text>记账</Text></View>
             </View>
           </View>
@@ -58,7 +60,7 @@ export default class More extends Component {
         <View className='my'>
           <View className='my-item flex-wrp'>
             <View className='myitem-icon flex-item' >
-              <Image class='myitem-img' src={bookPng} />
+              <AtIcon prefixClass='iconfont' value='browse' size='22' color='#009688'></AtIcon>
             </View>
             <View className='myitem-name flex-item'>
               <Text>我的浏览</Text>
@@ -66,7 +68,7 @@ export default class More extends Component {
           </View>
           <View className='my-item flex-wrp' onClick={this.navigateTo.bind(this, '/pages/publish/index')}>
             <View className='myitem-icon flex-item' >
-              <Image class='myitem-img' src={livePng} />
+              <AtIcon prefixClass='iconfont' value='publish' size='22' color='#448AFF'></AtIcon>
             </View>
             <View className='myitem-name flex-item'>
               <Text>我的发布</Text>
@@ -74,7 +76,7 @@ export default class More extends Component {
           </View>
           <View className='my-item flex-wrp'>
             <View className='myitem-icon flex-item' >
-              <Image class='myitem-img' src={zhiPng} />
+              <AtIcon prefixClass='iconfont' value='draft' size='22' color='#2196F3'></AtIcon>
             </View>
             <View className='myitem-name flex-item'>
               <Text>我的草稿</Text>
@@ -82,7 +84,7 @@ export default class More extends Component {
           </View>
           <View className='my-item flex-wrp'>
             <View className='myitem-icon flex-item' >
-              <Image class='myitem-img' src={zhiPng} />
+              <AtIcon prefixClass='iconfont' value='setting' size='22' color='#000'></AtIcon>
             </View>
             <View className='myitem-name flex-item'>
               <Text>设置</Text>

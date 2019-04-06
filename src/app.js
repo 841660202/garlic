@@ -5,6 +5,8 @@ import Index from './pages/index'
 import counterStore from './store/counter'
 
 import './app.scss'
+import "./asset/iconfont/iconfont.css";
+
 
 // 如果需要在 h5 环境中开启 React Devtools
 // 取消以下注释：
@@ -27,6 +29,7 @@ class App extends Component {
       'pages/price/index',
       'pages/farmers-traders/index',
       'pages/publish/index',
+      'pages/trader/index',
     ],
     window: {
       backgroundTextStyle: 'light',
