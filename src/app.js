@@ -21,7 +21,7 @@ const store = {
 class App extends Component {
   config = {
     pages: [
-      'pages/auth/index',
+      // 'pages/auth/index',
       'pages/index/index',
       'pages/detail/index',
       // 'pages/home/index',

@@ -18,7 +18,7 @@ export default class More extends Component {
           <Image className='head-bg' src={bgp} />
           <View className='user flex-wrp'>
             <View className='avatar flex-item'>
-              <Image className='userinfo-avatar' src='https://image.ibb.co/nKV5Cy/default_avatar.jpg' />
+              <Image className='userinfo-avatar' src='https://avatars1.githubusercontent.com/u/18305361?s=460&v=4' />
             </View>
             <View className='user-info flex-item'>
               <Text className='userinfo-nickname'>蒜头</Text>
@@ -80,6 +80,14 @@ export default class More extends Component {
             </View>
             <View className='myitem-name flex-item'>
               <Text>设置</Text>
+            </View>
+          </View>
+          <View className='my-item flex-wrp'>
+            <View className='myitem-icon flex-item' >
+              <AtIcon prefixClass='iconfont' value='about' size='22' color='#FFCA28'></AtIcon>
+            </View>
+            <View className='myitem-name flex-item'>
+              <Text>关于</Text>
             </View>
           </View>
         </View>

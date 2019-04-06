@@ -49,6 +49,18 @@ function setChartData(chart, data) {
       return {
         ...item,
         type: 'bar',
+        itemStyle: {
+          normal: {
+            barBorderRadius: 5,
+            color: new echarts.graphic.LinearGradient(
+              0, 0, 0, 1,
+              [
+                {offset: 0, color: '#8e75d4'},
+                {offset: 1, color: '#3d98ff'}
+              ]
+            )
+          }
+        },
       }
     })
   }
