@@ -106,8 +106,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="428">
-                <caret line="38" column="3" lean-forward="true" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+              <first_editor relative-caret-position="422">
+                <caret line="41" column="73" selection-start-line="41" selection-start-column="73" selection-end-line="41" selection-end-column="73" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -138,7 +138,7 @@
       <find>单行文本</find>
       <find>AtInput</find>
       <find>type</find>
-      <find>title</find>
+      <find />
       <find>AtInputNumber</find>
       <find>text</find>
       <find>reset</find>
@@ -247,7 +247,7 @@
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="225" />
+    <option name="x" value="-17" />
     <option name="y" value="23" />
     <option name="width" value="1518" />
     <option name="height" value="784" />
@@ -346,12 +346,12 @@
       <workItem from="1554206832263" duration="6071000" />
       <workItem from="1554266296531" duration="446000" />
       <workItem from="1554292824391" duration="9422000" />
-      <workItem from="1554437484505" duration="28073000" />
+      <workItem from="1554437484505" duration="28223000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45151000" />
+    <option name="totallyTimeSpent" value="45301000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -373,10 +373,10 @@
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.3298193" />
       <window_info id="npm" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="5" />
-      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.052710842" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.12951808" />
       <window_info anchor="bottom" id="RNConsole" order="10" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49528936" visible="true" weight="0.1783567" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49528936" visible="true" weight="0.1783567" />
       <window_info id="Project Explorer" order="3" />
       <window_info id="Job Explorer" order="3" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
@@ -676,8 +676,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="428">
-            <caret line="38" column="3" lean-forward="true" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+          <first_editor relative-caret-position="422">
+            <caret line="41" column="73" selection-start-line="41" selection-start-column="73" selection-end-line="41" selection-end-column="73" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
