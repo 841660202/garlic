@@ -39,4 +39,5 @@ $ npx taro build --type weapp
 ```
 
 ## 截图
-![mine]('https://github.com/841660202/garlic/blob/master/src/asset/readme/mine.png')
+
+<img src="https://github.com/841660202/garlic/blob/master/src/asset/readme/mine.png?raw=true" width="200" align=center />

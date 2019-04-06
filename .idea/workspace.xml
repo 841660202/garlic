@@ -106,8 +106,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="422">
-                <caret line="41" column="73" selection-start-line="41" selection-start-column="73" selection-end-line="41" selection-end-column="73" />
+              <first_editor relative-caret-position="534">
+                <caret line="43" column="105" selection-start-line="43" selection-start-column="105" selection-end-line="43" selection-end-column="105" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -138,7 +138,7 @@
       <find>单行文本</find>
       <find>AtInput</find>
       <find>type</find>
-      <find />
+      <find>title</find>
       <find>AtInputNumber</find>
       <find>text</find>
       <find>reset</find>
@@ -247,9 +247,9 @@
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-17" />
+    <option name="x" value="-52" />
     <option name="y" value="23" />
-    <option name="width" value="1518" />
+    <option name="width" value="1490" />
     <option name="height" value="784" />
   </component>
   <component name="ProjectView">
@@ -346,12 +346,12 @@
       <workItem from="1554206832263" duration="6071000" />
       <workItem from="1554266296531" duration="446000" />
       <workItem from="1554292824391" duration="9422000" />
-      <workItem from="1554437484505" duration="28223000" />
+      <workItem from="1554437484505" duration="28878000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45301000" />
+    <option name="totallyTimeSpent" value="45956000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -363,7 +363,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="225" y="23" width="1518" height="784" extended-state="0" />
+    <frame x="-52" y="23" width="1490" height="784" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="9" weight="0.3298193" />
@@ -373,10 +373,10 @@
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.3298193" />
       <window_info id="npm" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="5" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.12951808" />
+      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="RNConsole" order="10" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49528936" visible="true" weight="0.1783567" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49528936" visible="true" weight="0.16678013" />
       <window_info id="Project Explorer" order="3" />
       <window_info id="Job Explorer" order="3" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
@@ -676,8 +676,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="422">
-            <caret line="41" column="73" selection-start-line="41" selection-start-column="73" selection-end-line="41" selection-end-column="73" />
+          <first_editor relative-caret-position="534">
+            <caret line="43" column="105" selection-start-line="43" selection-start-column="105" selection-end-line="43" selection-end-column="105" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
