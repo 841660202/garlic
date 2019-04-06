@@ -37,3 +37,6 @@ $ npx taro build --type weapp
   url('iconfont.svg?t=1554528143694#iconfont') format('svg'); /* iOS 4.1- */
 }
 ```
+
+## 截图
+![mine]('https://github.com/841660202/garlic/src/asset/readme/mine.png')
