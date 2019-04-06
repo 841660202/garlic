@@ -3,7 +3,6 @@ import Taro, {Component} from '@tarojs/taro'
 import {Map, View, Text, Image} from '@tarojs/components'
 import location from '../../asset/images/center-location.png'
 import self_location from '../../asset/images/self-location.png'
-import logo from '../../asset/images/book.png'
 import './index.scss'
 
 export default class TraderMap extends Component {
@@ -82,7 +81,7 @@ export default class TraderMap extends Component {
             className='trader-bg'
             src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1752243568,253651337&fm=27&gp=0.jpg'
           />
-          <Image className='trader-logo' src={logo} />
+          <Image className='trader-logo' src='https://nervjs.github.io/taro/img/logo-taro.png' />
         </View>
         <View className='trader-info'>
           <View className='trader-info-left'>

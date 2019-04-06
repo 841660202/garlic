@@ -26,6 +26,7 @@ class App extends Component {
       'pages/detail/index',
       // 'pages/home/index',
       'pages/mine/index',
+      'pages/field-goods/index',
       'pages/price/index',
       'pages/farmers-traders/index',
       'pages/publish/index',
@@ -60,14 +61,14 @@ class App extends Component {
         //   selectedIconPath: "./asset/images/discovery_focus.png"
         // },
         {
-          pagePath: 'pages/farmers-traders/index',
-          text: "农/商",
+          pagePath: 'pages/field-goods/index',
+          text: "增产",
           iconPath: "./asset/images/discovery.png",
           selectedIconPath: "./asset/images/discovery_focus.png"
         },
         {
           pagePath: "pages/mine/index",
-          text: "我的",
+          text: "我",
           iconPath: "./asset/images/burger.png",
           selectedIconPath: "./asset/images/burger_focus.png"
         }]

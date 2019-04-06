@@ -76,6 +76,14 @@ export default class More extends Component {
           </View>
           <View className='my-item flex-wrp'>
             <View className='myitem-icon flex-item' >
+              <AtIcon prefixClass='iconfont' value='guide' size='22' color='#2196F3'></AtIcon>
+            </View>
+            <View className='myitem-name flex-item'>
+              <Text>新手引导</Text>
+            </View>
+          </View>
+          <View className='my-item flex-wrp'>
+            <View className='myitem-icon flex-item' >
               <AtIcon prefixClass='iconfont' value='setting' size='22' color='#000'></AtIcon>
             </View>
             <View className='myitem-name flex-item'>

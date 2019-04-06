@@ -30,3 +30,10 @@ $ npx taro build --type weapp
 - [项目1](https://github.com/wsdo/taro-kit)
 - [异步编程](https://nervjs.github.io/taro/docs/async-await.html)
 - [蚂蚁金服开放平台小程序](https://docs.alipay.com/mini/multi-platform/overview)
+## 字体文件只需要两个
+```
+@font-face {font-family: "iconfont";
+  src: url('iconfont.woff?t=1554528143694') format('woff'),
+  url('iconfont.svg?t=1554528143694#iconfont') format('svg'); /* iOS 4.1- */
+}
+```

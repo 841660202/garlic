@@ -1,6 +1,6 @@
 @font-face {font-family: "iconfont";
-  src: url('iconfont.woff?t=1554528143694') format('woff'),
-  url('iconfont.svg?t=1554528143694#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.woff?t=1554536318957') format('woff'),
+  url('iconfont.svg?t=1554536318957#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -25,6 +25,10 @@
 
 .iconfont-follow:before {
   content: "\e648";
+}
+
+.iconfont-guide:before {
+  content: "\e71d";
 }
 
 .iconfont-publish:before {

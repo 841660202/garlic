@@ -7,7 +7,7 @@ function setChartData(chart, data) {
       trigger: 'axis',
       axisPointer: {
         type: 'cross'
-      }
+      },
     },
     color: ['#2adb09'],
     title: {
